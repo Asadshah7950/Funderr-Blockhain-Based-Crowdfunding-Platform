@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Funderr",
+    "slug": "funderr-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#14b8a6"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.funderr.mobile"
+    },
+    "android": {
+      "package": "com.funderr.mobile"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

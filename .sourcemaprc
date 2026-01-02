@@ -1,0 +1,6 @@
+{
+  "excludeFiles": [
+    "**/node_modules/@expo/vector-icons/**",
+    "**/node_modules/react-native-vector-icons/**"
+  ]
+}
