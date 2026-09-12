@@ -13,7 +13,9 @@
     "build-web": "cross-env GENERATE_SOURCEMAP=false expo build:web",
     "clean": "expo r -c",
     "server": "node src/server.mjs",
-    "dev": "concurrently \"npm run server\" \"npm run web-no-sourcemaps\""
+    "dev": "concurrently \"npm run server\" \"npm run web-no-sourcemaps\"",
+    "test:unit": "node --test test/*.test.mjs",
+    "test": "npm run test:unit"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
