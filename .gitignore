@@ -1,22 +1,21 @@
-﻿# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Dependencies
 node_modules/
+src/blockchain/node_modules/
+funderr-mobile/node_modules/
 
-# Blockchain specific
-blockchain/node_modules/
+# Blockchain artifacts & cache
+src/blockchain/artifacts/
+src/blockchain/cache/
+src/blockchain/coverage/
 blockchain/artifacts/
 blockchain/cache/
 blockchain/coverage/
-blockchain/.env
 
-# Expo
+# Expo & Mobile builds
 .expo/
 dist/
 web-build/
 expo-env.d.ts
-
-# Native
 .kotlin/
 *.orig.*
 *.jks
@@ -24,26 +23,22 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
-
-# Metro
 .metro-health-check*
 
-# debug
+# Debug & logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
+# Environment variables & secrets
+**/.env
+**/.env.*
+**/.env.local
+**/.env.*.local
+!**/.env.example
+
+# OS & Editor files
 .DS_Store
+Thumbs.db
 *.pem
-
-# local env files
-# environment variables
-.env
-.env.*
-.env.local
-.env.*.local
-!.env.example
-
-# typescript
 *.tsbuildinfo
